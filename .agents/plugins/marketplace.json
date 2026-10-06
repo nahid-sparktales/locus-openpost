@@ -1,0 +1,10 @@
+{
+  "name": "locus-openpost",
+  "interface": {"displayName": "Locus OpenPost"},
+  "plugins": [{
+    "name": "social-studio",
+    "source": {"source": "local", "path": "."},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+    "category": "Productivity"
+  }]
+}

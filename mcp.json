@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "social-studio": {
+      "command": "${LOCUS_PYTHON}",
+      "args": ["-B", "${PLUGIN_ROOT}/server.py"],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": {"LOCUS_PLUGIN_DATA": "${PLUGIN_DATA}"},
+      "env_vars": ["PYTHONPATH"],
+      "tool_timeout_sec": 120
+    }
+  }
+}

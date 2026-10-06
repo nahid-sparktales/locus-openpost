@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "social-studio",
+  "version": "0.2.0",
+  "description": "Draft, adapt, research, and plan social content. Connect OpenPost to schedule and publish.",
+  "author": {"name": "SparkTales"},
+  "license": "Apache-2.0",
+  "repository": "https://github.com/nahid-sparktales/locus-openpost",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Social Studio · OpenPost",
+        "shortDescription": "Draft locally, then schedule and publish through OpenPost.",
+        "longDescription": "A downloadable social workspace with project drafts, channel versions, calendar, brand voice, research handoffs, and user-operated OpenPost publishing. Requires Locus with plugin panel context version 1.",
+        "developerName": "SparkTales",
+        "category": "Productivity",
+        "iconSmall": "./assets/icon.svg",
+        "iconLarge": "./assets/icon.svg"
+      }
+    },
+    "com.locus": {
+      "panels": [{
+        "id": "social-studio",
+        "title": "Social Studio",
+        "entrypoint": "ui/index.html",
+        "version": 1,
+        "capabilities": ["plugin.tools", "chat.compose"],
+        "tools": ["social_studio"]
+      }]
+    }
+  }
+}
